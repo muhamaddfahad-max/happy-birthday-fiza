@@ -1,0 +1,108 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff4b7d,#6a11cb);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+color:white;
+padding:20px;
+}
+
+.container{
+width:90%;
+max-width:700px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,255,255,.25);
+animation:fadeIn 2s;
+}
+
+h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+h2{
+font-size:32px;
+margin:10px 0;
+}
+
+.date{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.letter p{
+font-size:18px;
+line-height:1.8;
+margin:20px 0;
+}
+
+button{
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:50px;
+background:#fff;
+color:#ff2f6d;
+cursor:pointer;
+transition:.3s;
+font-weight:bold;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+#wish{
+margin-top:20px;
+font-size:24px;
+font-weight:bold;
+color:#fff799;
+}
+
+.hearts::before,
+.hearts::after{
+content:"❤️ ❤️ 💖 💕 💗";
+position:fixed;
+width:100%;
+left:0;
+font-size:30px;
+animation:fall 12s linear infinite;
+opacity:.5;
+}
+
+.hearts::after{
+animation-delay:6s;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-120px);
+}
+100%{
+transform:translateY(110vh);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+  }
